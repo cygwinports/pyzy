@@ -1,7 +1,7 @@
 NAME="pyzy"
 VERSION=0.1.0
-RELEASE=1
-CATEGORY="Text"
+RELEASE=2
+CATEGORY="Libs"
 SUMMARY="Chinese PinYin and Bopomofo conversion library"
 HOMEPAGE="http://code.google.com/p/pyzy/"
 SRC_URI="http://pyzy.googlecode.com/files/${NAME}-${VERSION}.tar.gz"
@@ -11,8 +11,5 @@ libpyzy1_0_0_REQUIRES="libpyzy-common"
 libpyzy1_0_0_CONTENTS="usr/bin/cygpyzy-1.0-0.dll"
 libpyzy1_0_devel_CONTENTS="usr/include/ usr/lib/"
 libpyzy_common_CONTENTS="usr/share/"
-
-# GCC 4.5 doesn't have sufficient c++0x support
-CYGCONF_ARGS="--enable-boost"
 
 KEEP_LA_FILES="none"
